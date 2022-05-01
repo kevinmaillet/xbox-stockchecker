@@ -1,0 +1,21 @@
+{
+  "name": "xbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-docker-server": "docker run -d -p 4444:4444 --restart=always --name xbox-selenium selenium/standalone-chrome:latest",
+    "stop-docker-server": "docker stop xbox-selenium",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "fake-useragent": "^1.0.1",
+    "selenium-webdriver": "^4.0.0-beta.1",
+    "twilio": "^3.67.1"
+  }
+}
